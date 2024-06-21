@@ -1,50 +1,57 @@
-@extends('layouts.app')
+<!-- resources/views/empleados/show.blade.php -->
+
+@extends('adminlte::page')
+
+@section('title', 'Detalles del Empleado')
+
+@section('content_header')
+    <h1>Detalles del Empleado</h1>
+@stop
 
 @section('content')
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">Detalle del Empleado</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo</label>
+                <input type="text" id="nombreCompleto" class="form-control" value="{{ $empleado->nombreCompleto }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="ci">CI</label>
+                <input type="text" id="ci" class="form-control" value="{{ $empleado->ci }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" class="form-control" value="{{ $empleado->telefono }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento" class="form-control" value="{{ $empleado->fechaNacimiento }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" value="{{ $empleado->email }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" class="form-control" value="{{ $empleado->direccion }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <input type="text" id="cargo" class="form-control" value="{{ $empleado->cargo }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="salario">Salario</label>
+                <input type="text" id="salario" class="form-control" value="{{ $empleado->salario }}" readonly>
+            </div>
+            <a href="{{ route('empleados.index') }}" class="btn btn-primary">Volver</a>
+        </div>
     </div>
-    <div class="card-body">
-        <table class="table table-bordered">
-            <tr>
-                <th>ID</th>
-                <td>{{ $empleado->id }}</td>
-            </tr>
-            <tr>
-                <th>Nombre Completo</th>
-                <td>{{ $empleado->nombreCompleto }}</td>
-            </tr>
-            <tr>
-                <th>CI</th>
-                <td>{{ $empleado->ci }}</td>
-            </tr>
-            <tr>
-                <th>Teléfono</th>
-                <td>{{ $empleado->telefono }}</td>
-            </tr>
-            <tr>
-                <th>Fecha de Nacimiento</th>
-                <td>{{ $empleado->fechaNacimiento }}</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>{{ $empleado->email }}</td>
-            </tr>
-            <tr>
-                <th>Dirección</th>
-                <td>{{ $empleado->direccion }}</td>
-            </tr>
-            <tr>
-                <th>Cargo</th>
-                <td>{{ $empleado->cargo }}</td>
-            </tr>
-            <tr>
-                <th>Salario</th>
-                <td>{{ $empleado->salario }}</td>
-            </tr>
-        </table>
-        <a href="{{ route('empleados.index') }}" class="btn btn-primary">Volver</a>
-    </div>
-</div>
-@endsection
+@stop
+
+@section('css')
+    {{-- Add here extra stylesheets --}}
+@stop
+
+@section('js')
+    {{-- Add here extra scripts --}}
+@stop

@@ -306,6 +306,12 @@ return [
             'icon' => 'fas fa-users',
         ],
         
+        [
+            'text' => 'CLIENTES',
+            'url' => 'clientes',
+            'icon' => 'fas fa-handshake',
+        ],
+        
     ],
 
     /*
