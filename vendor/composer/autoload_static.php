@@ -526,7 +526,15 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\ClienteController' => __DIR__ . '/../..' . '/app/Http/Controllers/ClienteController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\EmpleadoController' => __DIR__ . '/../..' . '/app/Http/Controllers/EmpleadoController.php',
+        'App\\Http\\Requests\\StoreClienteRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreClienteRequest.php',
+        'App\\Http\\Requests\\StoreEmpleadoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreEmpleadoRequest.php',
+        'App\\Http\\Requests\\UpdateClienteRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateClienteRequest.php',
+        'App\\Http\\Requests\\UpdateEmpleadoRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateEmpleadoRequest.php',
+        'App\\Models\\Cliente' => __DIR__ . '/../..' . '/app/Models/Cliente.php',
+        'App\\Models\\Empleado' => __DIR__ . '/../..' . '/app/Models/Empleado.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
