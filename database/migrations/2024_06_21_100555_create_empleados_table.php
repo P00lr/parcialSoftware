@@ -12,15 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('empleados', function (Blueprint $table) {
-            $table->id();
+            $table->increments("id");
             $table->string('nombreCompleto');
-            $table->string('ci')->unique();
-            $table->string('telefono')->unique();
+            $table->integer('ci')->unique();
+            $table->integer('telefono')->unique();
             $table->date('fechaNacimiento');
             $table->string('email')->unique();//corregido campo unicos
             $table->string('direccion', 255);
             $table->string('cargo');
-            $table->String('salario');
+            $table->double('salario');
             $table->timestamps();
         });
     }
