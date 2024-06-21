@@ -1,4 +1,11 @@
 <?php return array (
+  'jeroennoten/laravel-adminlte' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'JeroenNoten\\LaravelAdminLte\\AdminLteServiceProvider',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
@@ -11,6 +18,13 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'laravel/ui' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Ui\\UiServiceProvider',
     ),
   ),
   'nesbot/carbon' => 
