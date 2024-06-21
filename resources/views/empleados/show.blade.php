@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <h1>Detalle del Empleado</h1>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Detalle del Empleado</h3>
+    </div>
+    <div class="card-body">
         <table class="table table-bordered">
             <tr>
                 <th>ID</th>
@@ -43,4 +46,5 @@
         </table>
         <a href="{{ route('empleados.index') }}" class="btn btn-primary">Volver</a>
     </div>
+</div>
 @endsection
