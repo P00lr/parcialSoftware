@@ -39,7 +39,7 @@
                         <td>
                             <a href="{{ route('empleados.show', $empleado->id) }}" class="btn btn-info btn-sm">Ver</a>
                             <a href="{{ route('empleados.edit', $empleado->id) }}" class="btn btn-primary btn-sm">Editar</a>
-                            <!-- Agregar más acciones si es necesario -->
+
                         </td>
                     </tr>
                     @endforeach
@@ -49,10 +49,3 @@
     </div>
 @stop
 
-@section('css')
-    {{-- Add here extra stylesheets --}}
-@stop
-
-@section('js')
-    {{-- Add here extra scripts --}}
-@stop

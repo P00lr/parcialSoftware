@@ -52,10 +52,4 @@
     </div>
 @stop
 
-@section('css')
-  
-@stop
 
-@section('js')
-    {{-- Add here extra scripts --}}
-@stop

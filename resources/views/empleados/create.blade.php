@@ -49,11 +49,3 @@
         </div>
     </div>
 @stop
-
-@section('css')
-    {{-- Add here extra stylesheets --}}
-@stop
-
-@section('js')
-    {{-- Add here extra scripts --}}
-@stop
